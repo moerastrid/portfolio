@@ -1,6 +1,6 @@
 import type {Metadata} from "next";
-import { Limelight } from "next/font/google";
-import { Finlandica } from "next/font/google";
+import {Limelight} from "next/font/google";
+import {Finlandica} from "next/font/google";
 import "./globals.css";
 
 const limelight = Limelight({
@@ -26,10 +26,8 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-        <body
-            className={`${limelight.variable} ${finlandica.variable} antialiased`}
-        >
-        {children}
+        <body className={`${finlandica.variable} ${limelight.variable} antialiased`}>
+                {children}
         </body>
         </html>
     );
