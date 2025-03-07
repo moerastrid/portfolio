@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 /* color palette : based on https://colorhunt.co/palette/343a407952b3ffc107e1e8eb
 black : #343A40
 purple : #7952B3
@@ -21,8 +20,8 @@ white: #E1E8EB
 @theme inline {
     --color-background: var(--background);
     --color-foreground: var(--foreground);
-    --font-sans: var(--font-geist-sans);
-    --font-mono: var(--font-geist-mono);
+    --font-head: var(--font-limelight);
+    --font-text: var(--font-finlandica);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,5 +34,7 @@ white: #E1E8EB
 body {
     background: var(--background);
     color: var(--foreground);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Finlandica", "sans-serif";
+    font-optical-sizing: auto;
+    font-style: normal;
 }
